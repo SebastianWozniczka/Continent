@@ -1,5 +1,5 @@
 # Continent
-A simple website dedicated to the continent.
+
 
 ## Table of contents
 * [General info](#general-info)
