@@ -16,7 +16,7 @@ Project is created with:
 * typescript: 5.1.6
 	
 ## Setup
-To run this project, open it locally using Visual Studio Code:
+To run this project, install Node JS, install Angular CLI, generate new project and open it locally using Visual Studio Code:
 
 ```
 ng serve
