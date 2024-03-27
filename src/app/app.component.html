@@ -1,0 +1,87 @@
+<div class="toolbar" role="banner">
+
+    <div class="span2" appChecked>
+         <ul class="item" [style.color] = "getColor()" (mouseover)="onMouseMove($event)" (mouseleave) = "onMouseExit()" *ngFor="let word of toolbar2 | transformTask">{{word}}</ul>
+    </div>
+
+  <span class="span1" *ngFor="let word of tootlbar"  (click)="click()">{{word}} </span>
+
+  <a href="https://mail.google.com" target="_blank">
+    <img class="gmail"
+    width="40"
+    alt="Swordsman Logo"
+    src="assets/gmail.png"
+    href=" https://mail.google.com"
+    >
+  </a>
+
+ <div class="main" ><br><br>WIEDŹMIN EDYCJA ROZSZERZONA
+     <img
+        width="10"
+        alt="Swordsman Logo"
+        src="assets/gwiazdka.png"
+      />
+  <br>
+<div>
+
+  <video width="1024" height="768"  [ngClass]="{'clickVid': true, 'hidden': true}" controls >
+    <source src="assets/wiedzmin.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+<div class="history">
+Historia
+</div>
+
+<div class="description">
+  Witamy w świecie Wiedźmina – świecie spustoszonym przez powojenny chaos,
+  gdzie władcy, nie zważając na niedolę prostego ludu, udali się
+  gromadzenie łupów zamiast odbudowy tego, co zostało zniszczone. Na tych ziemiach
+  spustoszony przez zarazy, wśród zwęglonych ruin i na polach bitew przesiąkniętych krwią,
+  rozmnożyły się potwory i bestie. Świadczą o wiecznej potrzebie
+  wiedźmini, oddani zawodowi pogromcy potworów. A jednak niewielu wiedźminów
+  pozostać. Jesteś jednym z nich – Geraltem z Rivii, Białym Wilkiem.
+   Wiedźmin oznacza powrót do tradycyjnej, wielowątkowej gry RPG.
+  Łącząc widowiskową walkę z intrygującą historią osadzoną w pulsującym świecie
+  z życiem oferuje wybór widoków izometrycznych i widoków przez ramię, a
+  szeroki wybór opcji kontrolowania Geralta w obliczu przeciwności losu i poruszania się po świecie
+  bystrza historii. Zostań Geraltem z Rivii, legendarnym pogromcą potworów i
+  podróż przez spustoszoną wojną krainę, gdzie toczy się teraz walka o wpływy i...
+  moc, bitwa, która nieubłaganie Cię wciągnie...
+   Wiedźmin został stworzony przez ludzi, których łączy fascynacja książką
+  które prawie dwie dekady temu dla wielu zmieniło gatunek fantasy. Jako fani
+  tradycyjnych gier RPG, mamy nadzieję zmienić wrażenia z gry
+  innych miłośników RPG. Osiągnięcie tego będzie dla nas największą nagrodą.
+</div>
+
+<div class="character">
+
+  <h1>Bohater</h1>
+
+  <cdk-virtual-scroll-viewport [itemSize]="36 * 20" class="example-viewport">
+
+   <div *cdkVirtualFor="let item of items;
+                         let index = index;
+                         let count = count;
+                         let first = first;
+                         let last = last;
+                         let even = even;
+                         let odd = odd;" [class.example-alternate]="odd">
+      <div class="example-item-detail">Nie był czarodziejem, choć rzucał uroki,</div>
+      <div class="example-item-detail">Nie był kapłanem, choć dawał innym radę</div>
+      <div class="example-item-detail">Nie chciał pić eliksirów, choć dla wielu był alchemikiem</div>
+      <div class="example-item-detail">Nie był zuchwalcem, choć nosił dwa miecze</div>
+      <div class="example-item-detail">Pozostała po nim bajka...</div>
+      <div class="example-item-detail">...która wciąż nie ma zakończenia.</div>
+      <div class="example-item-detail2">Gracz wciela się w Rzeźnika z Blaviken zawodowego płatnego zabójcę.Zabrany rodzicom jako dziecko, został poddany treningowi na wahadle i magicznym eksperymentom, które doprowadziły do tego, że stał się mutantem. Wiedźmini są kastą postrzeganą jako nieludzie i bestie.</div>
+
+    </div>
+
+  </cdk-virtual-scroll-viewport>
+
+</div>
+
+</div>
+
+
